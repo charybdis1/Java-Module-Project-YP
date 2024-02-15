@@ -10,8 +10,7 @@ public class ProductPrinter {
             Product product = iterator.next();
             System.out.println(product.name + " " + product.price);
         }
-        System.out.println("Сумма на одного человека составляет: "
-                + String.format("%.2f", sum) + " " + currencyFormat(sum));
+        System.out.println(String.format("Сумма на одного человека составляет: %.2f " + currencyFormat(sum), sum));
     }
 
     public String currencyFormat(double price) {
